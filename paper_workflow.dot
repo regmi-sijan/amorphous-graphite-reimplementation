@@ -1,0 +1,40 @@
+digraph PaperWorkflow {
+  graph [rankdir=TB, bgcolor="white", pad=0.4, nodesep=0.35, ranksep=0.55,
+    splines=polyline, fontname="Helvetica", fontsize=24,
+    labelloc=t, label="Amorphous graphite: the paper's workflow\nHow do layers form, what binds them, and how does disorder affect conduction?", dpi=180];
+  node [shape=box, style="rounded,filled", fillcolor="#F0F5FA", color="#8796A5",
+    fontname="Helvetica", fontsize=14, fontcolor="#172B3A", margin="0.22,0.16", penwidth=1.1];
+  edge [color="#596B79", arrowsize=0.8, penwidth=1.2, fontname="Helvetica", fontsize=12];
+
+  A [label="1. Prepare carbon structures\nAmorphous or random arrangements\nChoose atom count and density"];
+  B [label="2. Simulate heating and atomic motion\nConstant-volume molecular dynamics\nNosé–Hoover temperature control\nCompare PBE, PBE + D3, and GAP"];
+  C [label="3. Collect simulation data\nAtomic positions, energy and temperature\nFollow evolution over 100–500 ps"];
+  D [label="4. Track formation over time\nMeasure sp² bonding, planarity and layering\nTrack energy changes and formation time", fillcolor="#E8F3EE"];
+  E [label="5. Relax representative structures\nRemove thermal distortions\nCheck whether layers remain"];
+  F [label="6. Measure final structure\nBond distances and in-plane RDF\nRing disorder and layer spacing", fillcolor="#E8F3EE"];
+  G [label="7. Calculate electronic properties"];
+  R [label="Comparison structures\nCrystalline graphite\nIdeal and vacancy-defected layers", fillcolor="#FAF1DE"];
+  H [label="Charge and bonding\nHSE06 charge density\nElectronic states near the Fermi level\nWhere are the electrons?", fillcolor="#E8F3EE"];
+  I [label="Electrical transport\nKubo–Greenwood conductivity\nSpace-projected conductivity\nWhere can conduction occur?", fillcolor="#E8F3EE"];
+  J [label="Separate zero-pressure relaxation\nInclude van der Waals interactions\nAllow cell volume to change"];
+  K [label="Measure equilibrium spacing\nDensity, volume and interlayer distance", fillcolor="#E8F3EE"];
+  N [shape=plaintext, fillcolor="white", fontsize=12,
+     label="Repeat across temperatures, densities, sizes and interaction methods.\nThese are simulation measurements, not experimental measurements.\n\nSource: Thapa et al., Physical Review Letters 128, 236402 (2022).\nDiagram describes the paper. Our Python implementation uses GAP + PySCF\nand independent structural proxies; the paper uses VASP/PAW for ab initio calculations."];
+
+  A -> B -> C;
+  C -> D;
+  C -> E;
+  E -> F;
+  E -> G;
+  R -> G;
+  E -> J;
+  G -> H;
+  G -> I;
+  J -> K;
+  {rank=same; D; E; R;}
+  {rank=same; F; G; J;}
+  {rank=same; H; I; K;}
+  H -> N [style=invis];
+  I -> N [style=invis];
+  K -> N [style=invis];
+}

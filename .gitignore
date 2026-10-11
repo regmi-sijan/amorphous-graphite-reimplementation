@@ -1,0 +1,37 @@
+.venv/
+__pycache__/
+.mplconfig/
+results/
+potentials/
+
+# Local system/editor files and build exports
+.DS_Store
+.AppleDouble/
+.vscode/
+.idea/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Downloaded publications, model archives and generated scientific data
+*.pdf
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.cube
+*.traj
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.log
+
+# Local credentials/configuration
+.env
+.env.*
+!.env.example

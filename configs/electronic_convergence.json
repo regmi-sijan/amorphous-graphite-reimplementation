@@ -1,0 +1,53 @@
+[
+  {
+    "name": "baseline",
+    "electronic": {
+      "field_mesh": [
+        40,
+        40,
+        40
+      ]
+    }
+  },
+  {
+    "name": "field_64",
+    "electronic": {
+      "field_mesh": [
+        64,
+        64,
+        64
+      ]
+    }
+  },
+  {
+    "name": "kmesh_211",
+    "electronic": {
+      "field_mesh": [
+        64,
+        64,
+        64
+      ],
+      "kmesh": [
+        2,
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "name": "basis_ccpvdz",
+    "electronic": {
+      "field_mesh": [
+        64,
+        64,
+        64
+      ],
+      "kmesh": [
+        2,
+        1,
+        1
+      ],
+      "basis": "cc-pvdz"
+    }
+  }
+]

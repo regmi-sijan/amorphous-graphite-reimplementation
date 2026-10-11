@@ -1,0 +1,16 @@
+{
+  "label": "Mac pilot; independent random start, not paper model M1-M6",
+  "n_atoms": 80,
+  "density_g_cm3": 2.44,
+  "temperature_K": 2700,
+  "duration_ps": 0.01,
+  "timestep_fs": 0.25,
+  "thermostat_damping_fs": 25.0,
+  "thermostat_chain_length": 3,
+  "seed": 42,
+  "minimum_initial_distance_A": 1.2,
+  "save_interval_steps": 10,
+  "bond_cutoff_A": 1.85,
+  "gap_xml": "potentials/carbon.xml",
+  "gap_args": "IP GAP label=GAP_2016_10_18_60_23_11_22_108"
+}

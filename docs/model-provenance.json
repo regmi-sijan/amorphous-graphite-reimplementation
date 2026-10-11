@@ -1,0 +1,15 @@
+{
+  "source": "https://doi.org/10.17863/CAM.7453",
+  "download": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/8834f03c-6fc9-46af-aeff-1b2517bf8f2d/content",
+  "archive_subdirectory": "training/full_das",
+  "model_label": "GAP_2016_10_18_60_23_11_22_108",
+  "license": "CC BY-NC-SA 4.0, see source record",
+  "scope": "Full 2-body + 3-body + SOAP fit in the 2017 dataset. Exact file identity with the PRL 2022 simulations has not been confirmed.",
+  "sha256": {
+    "carbon.xml": "03158254caf24f358cfcfc36f26416ac2e87032cf7f6d73e2e2b059554b50a9d",
+    "carbon.xml.sparseX.GAP_2016_10_18_60_23_11_22_1081": "75f5ceee8a18a6ad0f5f7360c2af5d0697ca0d44bf73abcaa64604933d3096b1",
+    "carbon.xml.sparseX.GAP_2016_10_18_60_23_11_22_1082": "b9780079852a89d231035feabb1fd8bdac35f26087f90d279877f0bd58274a9b",
+    "carbon.xml.sparseX.GAP_2016_10_18_60_23_11_22_1083": "93aaf5b32576e8629c90aead381dcdc711b9a0161da9cf61479bf463d99b786a"
+  },
+  "verified_source_record": "https://www.repository.cam.ac.uk/items/575ab523-3e3a-469b-a1b7-ac22cd4a65b8"
+}

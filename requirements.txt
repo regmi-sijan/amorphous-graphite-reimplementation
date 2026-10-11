@@ -1,0 +1,8 @@
+ase==3.29.0
+quippy-ase==0.10.3
+numpy>=2.0
+scipy>=1.13
+matplotlib>=3.9
+
+pyscf==2.14.0
+dftd3==1.6.0

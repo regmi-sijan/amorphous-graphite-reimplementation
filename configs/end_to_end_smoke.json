@@ -1,0 +1,92 @@
+{
+  "label": "End-to-end software smoke test; not a reproduction-quality model",
+  "structural": {
+    "n_atoms": 8,
+    "density_g_cm3": 2.44,
+    "seed": 73,
+    "temperature_K": 2700,
+    "duration_ps": 0.002,
+    "timestep_fs": 0.25,
+    "thermostat_damping_fs": 25.0,
+    "thermostat_chain_length": 3,
+    "minimum_initial_distance_A": 1.2,
+    "save_interval_steps": 2,
+    "bond_cutoff_A": 1.85,
+    "gap_xml": "potentials/carbon.xml",
+    "gap_args": "IP GAP label=GAP_2016_10_18_60_23_11_22_108",
+    "relax_steps": 250,
+    "relax_fmax_eV_A": 0.1,
+    "allow_unconverged_geometry": true
+  },
+  "reference_repeat": [
+    2,
+    1,
+    1
+  ],
+  "electronic": {
+    "basis": "sto-3g",
+    "kmesh": [
+      1,
+      1,
+      1
+    ],
+    "precision": 1e-07,
+    "scf_mesh": [
+      17,
+      17,
+      17
+    ],
+    "grid_level": 1,
+    "field_mesh": [
+      64,
+      64,
+      64
+    ],
+    "grid_block": 1024,
+    "smearing_eV": 0.1,
+    "conv_tol_Ha": 1e-07,
+    "max_cycle": 120,
+    "max_memory_MB": 2500,
+    "hse06": true,
+    "require_field_accuracy": true,
+    "field_relative_tolerance": 0.01
+  },
+  "transport": {
+    "photon_eV": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      4.0
+    ],
+    "broadening_eV": [
+      0.1,
+      0.2,
+      0.4
+    ],
+    "energy_window_eV": 8.0,
+    "spc_photon_eV": 0.0,
+    "spc_broadening_eV": 0.2,
+    "dos_range_eV": [
+      -15,
+      10
+    ],
+    "dos_broadening_eV": 0.15
+  },
+  "d3": {
+    "method": "PBE",
+    "damping": "d3zero"
+  },
+  "zero_pressure": {
+    "enabled": false,
+    "steps": 20,
+    "fmax_eV_A": 0.05,
+    "displacement_A": 0.002,
+    "strain_step": 0.002
+  },
+  "smoke_test": true,
+  "defect_reference": false
+}

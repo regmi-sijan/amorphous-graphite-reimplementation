@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  Cite the original paper for the scientific ideas and findings. Also identify
+  the repository commit or release when using this independent implementation.
+  See REFERENCES.bib for the GAP model, dataset, and SPC method.
+title: "Amorphous graphite: an independent Python reimplementation"
+type: software
+repository-code: https://github.com/regmi-sijan/amorphous-graphite-reimplementation
+authors:
+  - name: "Independent amorphous graphite reimplementation contributors"
+abstract: >-
+  An independent Python-led workflow inspired by Thapa et al. (2022), combining
+  GAP molecular dynamics, structural analysis, periodic PySCF electronic
+  calculations, and broadened Kubo-Greenwood/SPC analysis. Small software tests
+  have completed; a full quantitative reproduction has not been established.
+keywords:
+  - amorphous graphite
+  - molecular dynamics
+  - reproducibility
+  - density functional theory
+  - electronic transport
+preferred-citation:
+  type: article
+  title: "Ab Initio Simulation of Amorphous Graphite"
+  authors:
+    - family-names: Thapa
+      given-names: Rajendra
+    - family-names: Ugwumadu
+      given-names: Chinonso
+    - family-names: Nepal
+      given-names: Kishor
+    - family-names: Trembly
+      given-names: Jason
+    - family-names: Drabold
+      given-names: "D. A."
+  journal: Physical Review Letters
+  volume: "128"
+  issue: "23"
+  start: "236402"
+  year: 2022
+  doi: 10.1103/PhysRevLett.128.236402
